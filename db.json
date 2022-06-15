@@ -1,0 +1,302 @@
+{
+  "hoteis": [
+    {
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG20tWVvTn7MblXOgY55mZleRcoDC2_08DD_GI8sjnpXSk0MhdcW0uZslAVPvmUh7NOSs&usqp=CAU",
+      "name": "Pêlos e Patas Hotel",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "email": "hotel@email.com",
+      "numberPhone": "(48) 111111111",
+      "filters": {
+        "type": "dog",
+        "gender": "male",
+        "castrated": "uncastrated",
+        "weight": "5kg"
+      },
+
+      "address": {
+        "street": "Rua hotel 1",
+        "number": "123",
+        "district": "Campinas",
+        "zipCode": "88111450",
+        "city": {
+          "id": 2,
+          "city": "São José",
+          "state": "SC"
+        }
+      }
+    },
+
+    {
+      "id": 2,
+      "image": "https://media.istockphoto.com/vectors/pet-hotel-and-pet-house-for-pets-and-animals-doglittle-dogcatparrot-vector-id1221774782?k=20&m=1221774782&s=170667a&w=0&h=1Fm3vBzGJLmv1RbxFKOehj9iBbyRMVJpP7rf3zzMIy8=",
+      "name": "Pet Hotel Astrodog",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as asadfdfgdfdfddfdfdfdfddfdfdfddfdfdg",
+      "email": "hotel2@email.com",
+      "numberPhone": "(48) 22222222",
+      "filters": {
+        "type": "cat",
+        "weight": "5kg",
+        "gender": "male",
+        "castrated": "castrated"
+      },
+      "address": {
+        "street": "Rua hotel 2",
+        "number": "456",
+        "district": "Ingleses",
+        "zipCode": "88222145",
+        "city": {
+          "id": 1,
+          "city": "Florianópolis",
+          "state": "SC"
+        }
+      }
+    },
+
+    {
+      "id": 3,
+      "image": "https://i.pinimg.com/736x/cb/7a/56/cb7a56dfdbe6c6c12c12a8b0286a659c.jpg",
+      "name": "My Pets Hotel",
+      "description": "he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from ",
+      "email": "hotel3@email.com",
+      "numberPhone": "(54) 33333333",
+      "filters": {
+        "type": "dog",
+        "gender": "female",
+        "weight": "15kg"
+      },
+      "address": {
+        "street": "Rua hotel 3",
+        "number": "789",
+        "district": "centro",
+        "zipCode": "88154545",
+        "city": {
+          "id": 3,
+          "city": "Gramado",
+          "state": "RS"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "image": "https://us.123rf.com/450wm/kcng83/kcng831908/kcng83190800266/131023355-cute-dog-holding-a-big-signboard-pet-hotel.jpg?ver=6",
+      "name": "Pet Hotel 101 Cães",
+      "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+      "email": "hotel4@email.com",
+      "numberPhone": "(11) 4444444",
+      "filters": {
+        "type": "dog",
+        "gender": "male",
+        "weight": "5kg"
+      },
+      "address": {
+        "street": "Rua hotel 4",
+        "number": "321",
+        "district": "São Jorge",
+        "zipCode": "8745888",
+        "city": {
+          "id": 4,
+          "city": "Piracicaba",
+          "state": "SP"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJ641zCZ2jAg1A2YDu5U2IzjLUNuaIUBFfg&usqp=CAU",
+      "name": "Planet Pet",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as asadfdfgdfdfddfdfdfdfddfdfdfddfdfdg",
+      "email": "hotel5@email.com",
+      "numberPhone": "(11) 5555555",
+      "address": {
+        "street": "Rua hotel ",
+        "number": "654",
+        "district": "Morro das Pedras",
+        "zipCode": "848445",
+        "city": {
+          "id": 1,
+          "city": "Florianópolis",
+          "state": "SP"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "image": "https://en.pimg.jp/068/806/068/1/68806068.jpg",
+      "name": "Hotel Férias do Dono",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as asadfdfgdfdfddfdfdfdfddfdfdfddfdfdg",
+      "email": "hotel5@email.com",
+      "numberPhone": "(48) 4854515",
+      "address": {
+        "street": "Rua hotel ",
+        "number": "894",
+        "district": "Ipiranga",
+        "zipCode": "887554455",
+        "city": {
+          "id": 2,
+          "city": "São José",
+          "state": "SC"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "image": "https://media.istockphoto.com/vectors/pets-care-services-tiny-people-and-pet-hotel-daycare-veterinary-pet-vector-id1205007403?s=612x612",
+      "name": "Hotel Patinhas",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as ",
+      "email": "hotel7@email.com",
+      "numberPhone": "(48) 4854515",
+      "address": {
+        "street": "Rua hotel ",
+        "number": "44",
+        "district": "Belvedere",
+        "zipCode": "887554455",
+        "city": {
+          "id": 3,
+          "city": "Gramado",
+          "state": "RS"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "image": "https://media.istockphoto.com/vectors/online-pets-care-services-tiny-people-and-pet-hotel-daycare-service-vector-id1205007321",
+      "name": "Cãopanheiro e gatos",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem fact that a reader will be distracted by the readable content of a page",
+      "email": "hotel8@email.com",
+      "numberPhone": "(48) 8875495",
+      "address": {
+        "street": "Rua hotel ",
+        "number": "54",
+        "district": "São Pedro",
+        "zipCode": "88895545",
+        "city": {
+          "id": 4,
+          "city": "Piracicaba",
+          "state": "SP"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mfqLtczTan-_ZOWpSoo6rZoTgCtxFlHDpg&usqp=CAU",
+      "name": "Hotel Peludinhos",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as asadfdfgdfdfddfdfdfdfddfdfdfddfdfdg",
+      "email": "hotel9@email.com",
+      "numberPhone": "(48) 65486554",
+      "address": {
+        "street": "Rua hotel ",
+        "number": "64",
+        "district": "Coqueiros",
+        "zipCode": "887554455",
+        "city": {
+          "id": 1,
+          "city": "Florianópolis",
+          "state": "SC"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtMIiW8vJJUfJwJrn91slp4tIIKmMPOF5Aw&usqp=CAU",
+      "name": "Hotel Planeta Animal",
+      "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as ",
+      "email": "hotel10@email.com",
+      "numberPhone": "(48) 4854515",
+      "address": {
+        "street": "Rua hotel ",
+        "number": "89",
+        "district": "Kobrasol",
+        "zipCode": "887554455",
+        "city": {
+          "id": 2,
+          "city": "São José",
+          "state": "SC"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG20tWVvTn7MblXOgY55mZleRcoDC2_08DD_GI8sjnpXSk0MhdcW0uZslAVPvmUh7NOSs&usqp=CAU",
+      "name": "Pêlos e Pulgas Hotel",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "email": "hotel11@email.com",
+      "numberPhone": "(48) 222222222",
+      "filters": {
+        "type": "dog",
+        "gender": "male",
+        "castrated": "castrated",
+        "weight": "5kg"
+      },
+
+      "address": {
+        "street": "Rua hotel 11",
+        "number": "123",
+        "district": "Canasvieiras",
+        "zipCode": "88111450",
+        "city": {
+          "id": 1,
+          "city": "Florianópolis",
+          "state": "SC"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG20tWVvTn7MblXOgY55mZleRcoDC2_08DD_GI8sjnpXSk0MhdcW0uZslAVPvmUh7NOSs&usqp=CAU",
+      "name": "Dog & Cat Hotel",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "email": "hotel@email.com",
+      "numberPhone": "(48) 185485515",
+      "filters": {
+        "type": "dog",
+        "gender": "male",
+        "castrated": "castrated",
+        "weight": "5kg"
+      },
+
+      "address": {
+        "street": "Rua hotel 12",
+        "number": "123",
+        "district": "Praia do Forte",
+        "zipCode": "88111450",
+        "city": {
+          "id": 1,
+          "city": "Florianópolis",
+          "state": "SC"
+        }
+      }
+    }
+  ],
+
+  "cities": [
+    {
+      "city": "Florianópolis",
+      "id": 1
+    },
+    {
+      "city": "Piracicaba",
+      "id": 4
+    },
+    {
+      "city": "Palhoça",
+      "id": 5
+    },
+    {
+      "city": "São José",
+      "id": 2
+    },
+    {
+      "city": "Gramado",
+      "id": 3
+    },
+    {
+      "city": "Cascavel",
+      "id": 6
+    },
+    {
+      "city": "Limeira",
+      "id": 7
+    }
+  ]
+}
