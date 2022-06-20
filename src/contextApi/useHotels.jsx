@@ -6,7 +6,7 @@
  * useEffect é o hook que irá fazer a chamada da função handleSearch() e será chamado sempre que uma das variáveis do seu array de dependência atualizar.
  */
 
-import { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import api from "../services/api";
 import { useCities } from "./useCities";
 
@@ -43,6 +43,7 @@ export function HotelContextProvider({ children }) {
 
     try {
       const response = await api.get("/establishment/", paramsOptions);
+      console.log("teste");
       const {
         content,
         pageable: { pageNumber: page },
