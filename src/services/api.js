@@ -4,8 +4,8 @@
 
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "https://pettrip-tcs.herokuapp.com",
-});
+export const baseURL = "https://pettrip-tcs.herokuapp.com";
+
+const api = axios.create({ baseURL });
 
 export default api;

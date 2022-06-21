@@ -36,11 +36,11 @@ const CardHotel = () => {
       <CardContainer>
         <Container maxWidth="xl">
           <TextCity>
-            Hotéis em: <span>{city.label} </span>
+            Hotéis em: <span>{city.label}</span>
           </TextCity>
           <ul>
             {hotels.map((hotel) => (
-              <li key={hotel.id}>
+              <li key={hotel.id} data-testid={`hotel-id-${hotel.id}`}>
                 <CardBox>
                   <BoxImage>
                     <img src={hotel.image} alt="Imagem do Hotel" />

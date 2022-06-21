@@ -1,47 +1,41 @@
 import React from "react";
-import CardHotel from ".";
-import { render, screen } from "@testing-library/react";
-import { rest } from "msw";
-import { setupServer } from "msw/node";
+import { render, screen, waitFor } from "@testing-library/react";
+
+import { hotelsHandlerException } from "../../tests/hotels/handlers";
+import { mswServer } from "../../tests/msw-server";
+
 import { HotelContextProvider } from "../../contextApi/useHotels";
-
-function renderAll() {}
-
-const hotelsResponse = rest.get(
-  "https://pettrip-tcs.herokuapp.com/establishment/",
-  (req, res, ctx) => {
-    return res(
-      ctx.json({
-        content: [
-          {
-            id: 1,
-            image: "",
-            name: "Kamilla",
-            description: "Ruth louca",
-          },
-        ],
-      })
-    );
-  }
-);
-
-const handlers = [hotelsResponse];
-
-const server = new setupServer(...handlers);
-
-beforeAll(() => server.listen());
-afterEach(() => server.resetHandlers());
-afterAll(() => server.close());
+import { CitiesContextProvider } from "../../contextApi/useCities";
+import CardHotel from ".";
 
 describe("CardHotel component", () => {
-  it("should show the list of hotels", () => {
-    const { debug } = render(
-      <HotelContextProvider>
-        <CardHotel />
-      </HotelContextProvider>
+  it.only("should show the list of hotels", async () => {
+    const { findAllByTestId } = render(
+      <CitiesContextProvider>
+        <HotelContextProvider>
+          <CardHotel />
+        </HotelContextProvider>
+      </CitiesContextProvider>
     );
-    debug();
+    const results = await findAllByTestId(/hotel-id-\d+/);
 
-    expect(1).toBe(1);
+    await waitFor(() => {
+      expect(results).toHaveLength(1);
+    });
+  });
+
+  it("displays error message when fetching hotels error", async () => {
+    mswServer.use(hotelsHandlerException);
+
+    render(
+      <CitiesContextProvider>
+        <HotelContextProvider>
+          <CardHotel />
+        </HotelContextProvider>
+      </CitiesContextProvider>
+    );
+
+    const errorDisplay = await screen.findByText("Sinto muito.");
+    expect(errorDisplay).toBeInTheDocument();
   });
 });

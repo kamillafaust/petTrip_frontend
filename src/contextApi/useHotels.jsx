@@ -15,6 +15,7 @@ export const HotelContext = createContext({});
 export function HotelContextProvider({ children }) {
   const [hotels, setHotels] = useState([]);
   const [filter, setFilter] = useState({});
+  
   const { city } = useCities();
 
   const [pagination, setPagination] = useState({
@@ -25,6 +26,7 @@ export function HotelContextProvider({ children }) {
 
   const handleSearch = async () => {
     let paramsOptions = {};
+
     paramsOptions = {
       params: {
         type: filter.type,
@@ -42,8 +44,8 @@ export function HotelContextProvider({ children }) {
     };
 
     try {
-      const response = await api.get("/establishment/", paramsOptions);
-      console.log("teste");
+      const response = await api.get("/establishment/");
+      
       const {
         content,
         pageable: { pageNumber: page },
@@ -53,6 +55,7 @@ export function HotelContextProvider({ children }) {
       setHotels(content);
       setPagination({ ...pagination, page, first, last });
     } catch (error) {
+      console.log(error)
       setHotels([]);
     }
   };
