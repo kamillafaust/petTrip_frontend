@@ -36,6 +36,7 @@ export function HotelContextProvider({ children }) {
         cityId: city.id,
       },
     };
+
     paramsOptions = {
       params: {
         ...paramsOptions.params,
@@ -44,18 +45,17 @@ export function HotelContextProvider({ children }) {
     };
 
     try {
-      const response = await api.get("/establishment/");
-      
+      const response = await api.get("/establishment/", paramsOptions);
       const {
         content,
         pageable: { pageNumber: page },
         first,
         last,
       } = response.data;
+
       setHotels(content);
       setPagination({ ...pagination, page, first, last });
     } catch (error) {
-      console.log(error)
       setHotels([]);
     }
   };

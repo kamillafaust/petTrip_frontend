@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import { hotelsHandlerException } from "../../tests/hotels/handlers";
 import { mswServer } from "../../tests/msw-server";
@@ -9,19 +9,21 @@ import { CitiesContextProvider } from "../../contextApi/useCities";
 import CardHotel from ".";
 
 describe("CardHotel component", () => {
-  it.only("should show the list of hotels", async () => {
-    const { findAllByTestId } = render(
+  it("should show the list of hotels", async () => {
+    const { findAllByTestId, findAllByText } = render(
       <CitiesContextProvider>
         <HotelContextProvider>
           <CardHotel />
         </HotelContextProvider>
       </CitiesContextProvider>
     );
-    const results = await findAllByTestId(/hotel-id-\d+/);
 
-    await waitFor(() => {
-      expect(results).toHaveLength(1);
-    });
+    const results = await findAllByTestId(/hotel-id-\d+/);
+    expect(results).toHaveLength(2);
+
+    const hotelNames = await findAllByText("Pet Hotel Astrodog Léo");
+    expect(hotelNames[0]).toBeInTheDocument();
+    expect(hotelNames[0].textContent).toBe("Pet Hotel Astrodog Léo");
   });
 
   it("displays error message when fetching hotels error", async () => {
