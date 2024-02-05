@@ -6,7 +6,6 @@
 
   1. [Git](https://git-scm.com/downloads)
   2. [Node v14](https://www.npmjs.com/package/node/v/14.19.3)
-  3. [Jdk 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html)
 
 <h2> :sparkles: Rodar o projeto:</h2>
 
